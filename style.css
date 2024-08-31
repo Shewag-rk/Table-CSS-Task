@@ -1,0 +1,61 @@
+:root {
+  --backround-th: hsl(254, 21%, 24%);
+  --white: white;
+  --nthchile-color: grey;
+  --bg-g: linear-gradient(to right, hsl(257, 53%, 57%), hsl(298, 48%, 54%));
+}
+
+body {
+  max-width: 1440px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: var(--bg-g);
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+}
+
+.container {
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: auto;
+  border-radius: 50px;
+  width: 100%;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--backround-th);
+  color: var(--white);
+}
+
+th,
+td {
+  /* padding: 9.5px 9.9px ; */
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--nthchile-bg);
+}
+
+/* tbody tr:nth-child(odd) {
+    color: hsl(0,0%,90%);
+} */
+
+tbody tr:nth-child(odd) {
+  color: var(--nthchile-color);
+}
